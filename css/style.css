@@ -814,3 +814,53 @@ footer a:hover {
         padding: var(--spacing-sm) var(--spacing-md);
     }
 }
+
+/* ==========================================================================
+   Contact Page - Centered Layout
+   ========================================================================== */
+
+.contact-info-centered {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-info-centered .contact-method {
+    margin-bottom: var(--spacing-xl);
+}
+
+.contact-info-centered h2 {
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.contact-phone {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.contact-phone a {
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+.contact-crisis {
+    background-color: var(--color-background);
+    padding: var(--spacing-md);
+    border-radius: 8px;
+    margin-top: var(--spacing-xl);
+}
+
+.contact-crisis p {
+    margin: 0;
+    color: var(--color-text-light);
+}
+
+.form-disclaimer {
+    background-color: var(--color-background);
+    padding: var(--spacing-sm);
+    border-radius: 4px;
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+    border-left: 3px solid var(--color-accent);
+}
