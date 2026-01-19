@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Therapy services offered by Dr. Elise Zamsky including individual therapy for anxiety, depression, and life transitions.">
+    <title>Services | Elise Zamsky, PhD</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">Elise Zamsky, PhD</a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="fees.html">Insurance & Fees</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Services</h1>
+                <p class="page-intro">I provide individual therapy for adults dealing with a range of concerns. Below are some of the areas I specialize in.</p>
+            </div>
+        </section>
+
+        <section class="services-detail">
+            <div class="container">
+                <div class="service-item">
+                    <h2>Anxiety & Stress</h2>
+                    <p>Anxiety can manifest in many ways - persistent worry, panic attacks, social anxiety, or a general sense of unease. Together, we'll work to understand your anxiety patterns and develop practical strategies to manage them.</p>
+                </div>
+
+                <div class="service-item">
+                    <h2>Depression</h2>
+                    <p>Depression can make everyday life feel overwhelming and joyless. Therapy can help you understand the root causes of your depression, develop coping strategies, and gradually reconnect with activities and relationships that bring meaning to your life.</p>
+                </div>
+
+                <div class="service-item">
+                    <h2>Relationship Issues</h2>
+                    <p>Our relationships with others significantly impact our wellbeing. I help individuals work through relationship challenges, improve communication skills, establish healthy boundaries, and develop more fulfilling connections.</p>
+                </div>
+
+                <div class="service-item">
+                    <h2>Life Transitions</h2>
+                    <p>Major life changes - whether chosen or unexpected - can bring up difficult emotions and uncertainty. Whether you're navigating a career change, divorce, loss, relocation, or another transition, I can help you process these changes and find your footing.</p>
+                </div>
+
+                <div class="service-item">
+                    <h2>Grief & Loss</h2>
+                    <p>Grief is a natural response to loss, but it can feel overwhelming. I provide a supportive space to process your grief, honor your feelings, and gradually find a path forward.</p>
+                </div>
+
+                <div class="service-item">
+                    <h2>Trauma & PTSD</h2>
+                    <p>Past traumatic experiences can continue to affect us long after they've occurred. I offer a safe, supportive environment to process trauma at your own pace, using approaches tailored to your needs.</p>
+                </div>
+
+                <div class="service-item">
+                    <h2>Self-Esteem & Coping Skills</h2>
+                    <p>Struggling with self-worth can affect all areas of life. Therapy provides a space to challenge negative self-perceptions, develop healthy coping skills, and build a stronger sense of self.</p>
+                </div>
+
+                <div class="service-item">
+                    <h2>Parenting & Family Issues</h2>
+                    <p>Parenting brings unique challenges at every stage. I help individuals navigate parenting concerns, family dynamics, and the demands of caring for children or aging parents.</p>
+                </div>
+
+                <div class="approach-note">
+                    <h2>My Therapeutic Approach</h2>
+                    <p>I believe in meeting each client where they are and tailoring treatment to their unique needs. My approach is eclectic and integrative, drawing from:</p>
+                    <ul>
+                        <li><strong>Cognitive-Behavioral Therapy (CBT)</strong> - Identifying and changing unhelpful thought patterns</li>
+                        <li><strong>Psychodynamic Therapy</strong> - Understanding how past experiences shape present patterns</li>
+                        <li><strong>Mindfulness-Based Approaches (MBCT)</strong> - Developing present-moment awareness</li>
+                        <li><strong>Interpersonal Therapy</strong> - Improving relationships and communication</li>
+                        <li><strong>Coaching</strong> - Goal-setting and practical problem-solving</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="container">
+                <h2>Questions About Services?</h2>
+                <p>I'm happy to discuss whether my services might be a good fit for your needs.</p>
+                <a href="contact.html" class="btn">Contact Me</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p class="footer-name">Elise Zamsky, PhD</p>
+                    <p>Licensed Psychologist</p>
+                    <p>1350 Connecticut Avenue NW</p>
+                    <p>Washington, DC 20036</p>
+                </div>
+                <div class="footer-contact">
+                    <p>Phone: <a href="tel:+12029291987">(202) 929-1987</a></p>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2025 Elise Zamsky, PhD. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        navToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            navToggle.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

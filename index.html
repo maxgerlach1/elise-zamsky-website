@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Elise Zamsky, PhD - Licensed Clinical Psychologist providing compassionate, evidence-based therapy.">
+    <title>Elise Zamsky, PhD | Clinical Psychologist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">Elise Zamsky, PhD</a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="fees.html">Insurance & Fees</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1>Welcome</h1>
+                    <p class="subtitle">Compassionate psychotherapy for adults in Washington, DC</p>
+                    <p>At times, we struggle through life's challenges, perhaps feeling stuck or unsure of the path forward. I provide an open, supportive environment where clients feel comfortable and not judged. My style is warm, compassionate, and straightforward.</p>
+                    <a href="contact.html" class="btn">Schedule a Consultation</a>
+                </div>
+                <div class="hero-image">
+                    <img src="images/headshot.jpg" alt="Dr. Elise Zamsky, Clinical Psychologist">
+                </div>
+            </div>
+        </section>
+
+        <section class="intro">
+            <div class="container">
+                <h2>About My Practice</h2>
+                <p>I specialize in helping adults navigate life transitions, manage anxiety and depression, and develop healthier relationships. My approach integrates evidence-based techniques with genuine human connection.</p>
+                <p>Whether you're dealing with a specific challenge or seeking personal growth, I'm here to support you on your journey.</p>
+                <a href="about.html" class="btn btn-outline">Learn More About Me</a>
+            </div>
+        </section>
+
+        <section class="services-preview">
+            <div class="container">
+                <h2>Areas of Focus</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>Anxiety & Stress</h3>
+                        <p>Learn to manage worry, panic, and overwhelming stress through proven therapeutic techniques.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Depression</h3>
+                        <p>Find relief from persistent sadness, low motivation, and feelings of hopelessness.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Life Transitions</h3>
+                        <p>Navigate major changes including career shifts, relationship changes, and personal growth.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Relationship Issues</h3>
+                        <p>Improve communication, set boundaries, and build healthier connections with others.</p>
+                    </div>
+                </div>
+                <a href="services.html" class="btn btn-outline">View All Services</a>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="container">
+                <h2>Ready to Get Started?</h2>
+                <p>I offer a free 15-minute phone consultation to answer your questions and see if we're a good fit.</p>
+                <a href="contact.html" class="btn">Contact Me</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p class="footer-name">Elise Zamsky, PhD</p>
+                    <p>Licensed Psychologist</p>
+                    <p>1350 Connecticut Avenue NW</p>
+                    <p>Washington, DC 20036</p>
+                </div>
+                <div class="footer-contact">
+                    <p>Phone: <a href="tel:+12029291987">(202) 929-1987</a></p>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2025 Elise Zamsky, PhD. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile navigation toggle
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        navToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            navToggle.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

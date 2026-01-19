@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Insurance and fee information for therapy services with Dr. Elise Zamsky.">
+    <title>Insurance & Fees | Elise Zamsky, PhD</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">Elise Zamsky, PhD</a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="fees.html" class="active">Insurance & Fees</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Insurance & Fees</h1>
+            </div>
+        </section>
+
+        <section class="fees-content">
+            <div class="container">
+                <div class="fees-section">
+                    <h2>Session Rates</h2>
+                    <div class="fee-item">
+                        <span class="fee-service">Individual Therapy Session</span>
+                        <span class="fee-amount">$220</span>
+                    </div>
+                    <p class="fee-note">Payment is due at the time of service.</p>
+                </div>
+
+                <div class="fees-section">
+                    <h2>Insurance</h2>
+                    <p>I can provide a superbill (detailed receipt) that you can submit to your insurance company for potential out-of-network reimbursement. Many plans offer partial reimbursement for out-of-network mental health services.</p>
+                    <p>I recommend contacting your insurance company to understand your mental health benefits before beginning treatment.</p>
+                </div>
+
+                <div class="fees-section">
+                    <h2>Questions to Ask Your Insurance</h2>
+                    <ul>
+                        <li>Do I have mental health benefits?</li>
+                        <li>What is my deductible and has it been met?</li>
+                        <li>How many therapy sessions are covered per year?</li>
+                        <li>What is my co-pay or co-insurance for an out-of-network provider?</li>
+                        <li>Do I need a referral or pre-authorization?</li>
+                    </ul>
+                </div>
+
+                <div class="fees-section">
+                    <h2>Sliding Scale</h2>
+                    <p>I believe that therapy should be accessible to those who need it. A limited number of sliding scale slots are available for individuals experiencing financial hardship. Please inquire during your initial consultation if this applies to you.</p>
+                </div>
+
+                <div class="fees-section">
+                    <h2>Cancellation Policy</h2>
+                    <p>I require 24 hours notice for cancellations. Sessions cancelled with less than 24 hours notice or missed without notice will be charged the full session fee. This policy helps ensure that appointment times remain available for all clients.</p>
+                </div>
+
+                <div class="fees-section">
+                    <h2>Good Faith Estimate</h2>
+                    <p>Under the No Surprises Act, you have the right to receive a Good Faith Estimate explaining how much your medical care will cost. For questions or more information about your right to a Good Faith Estimate, visit <a href="https://www.cms.gov/nosurprises" target="_blank" rel="noopener">www.cms.gov/nosurprises</a>.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="container">
+                <h2>Questions About Payment?</h2>
+                <p>I'm happy to discuss fees and payment options during a consultation.</p>
+                <a href="contact.html" class="btn">Contact Me</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p class="footer-name">Elise Zamsky, PhD</p>
+                    <p>Licensed Psychologist</p>
+                    <p>1350 Connecticut Avenue NW</p>
+                    <p>Washington, DC 20036</p>
+                </div>
+                <div class="footer-contact">
+                    <p>Phone: <a href="tel:+12029291987">(202) 929-1987</a></p>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2025 Elise Zamsky, PhD. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        navToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            navToggle.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
