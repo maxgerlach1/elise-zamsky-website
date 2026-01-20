@@ -1,131 +1,43 @@
 # Elise Zamsky, PhD - Website
 
-A clean, professional website for a clinical psychology practice.
+Professional website for a clinical psychology practice.
 
-## Preview Locally
-
-Open `index.html` directly in your browser, or run a local server:
-
-```bash
-cd /Users/max.gerlach/projects/elise-zamsky-website
-python3 -m http.server 8080
-```
-
-Then visit http://localhost:8080
-
-## Setup Checklist
-
-### 1. Add Your Content
-
-Replace placeholder text (marked with `[brackets]`) in these files:
-
-- **index.html** - City/state, welcome message
-- **about.html** - Bio, education, approach, credentials
-- **services.html** - Specific services offered (add/remove as needed)
-- **fees.html** - Session rates, accepted insurance
-- **contact.html** - Phone, email, address, office hours
-- **All files** - Update footer with correct contact info
-
-### 2. Add Photo
-
-Replace `images/headshot.jpg` with a professional photo of your mom.
-
-Recommended: 600x800px or similar portrait ratio, optimized for web (~100-200KB).
-
-### 3. Set Up Contact Form (Formspree)
-
-1. Go to https://formspree.io and create a free account
-2. Create a new form
-3. Copy your form ID (looks like `xabcdefg`)
-4. In `contact.html`, find this line:
-   ```html
-   <form action="https://formspree.io/f/YOUR_FORM_ID" ...>
-   ```
-5. Replace `YOUR_FORM_ID` with your actual form ID
-
-Form submissions will be sent to the email you registered with.
+**Live at:** https://elisezamskyphd.com
+**Redirect:** https://elisezamsky.com
 
 ---
 
-## Hosting on Netlify (Recommended)
+## Current Setup
 
-Netlify offers free hosting with custom domains, SSL, and automatic deployments.
+### Hosting: Netlify
+- **Site name:** beautiful-stardust-1b7e9a
+- **Auto-deploys** from GitHub on push to `main`
+- **Free SSL** via Let's Encrypt
 
-### Step 1: Create GitHub Repository
+### Domains: Namecheap
+- `elisezamskyphd.com` (primary)
+- `elisezamsky.com` (redirects to primary)
 
-```bash
-cd /Users/max.gerlach/projects/elise-zamsky-website
-git init
-git add .
-git commit -m "Initial website"
-```
+Both domains use **Netlify DNS** (nameservers point to Netlify).
 
-Create a new repo on GitHub, then:
-
-```bash
-git remote add origin https://github.com/YOUR_USERNAME/elise-zamsky-website.git
-git branch -M main
-git push -u origin main
-```
-
-### Step 2: Deploy to Netlify
-
-1. Go to https://netlify.com and sign up (free) with your GitHub account
-2. Click "Add new site" > "Import an existing project"
-3. Connect your GitHub repo
-4. Deploy settings: leave defaults (no build command needed)
-5. Click "Deploy site"
-
-Your site will be live at `random-name.netlify.app` within minutes.
-
-### Step 3: Buy Domain
-
-Buy `elisezamskyphd.com` from one of these registrars:
-
-- **Namecheap** (~$10/year) - namecheap.com
-- **Cloudflare** (~$9/year) - cloudflare.com/products/registrar
-- **Porkbun** (~$9/year) - porkbun.com
-
-### Step 4: Connect Domain to Netlify
-
-1. In Netlify dashboard, go to your site > "Domain settings"
-2. Click "Add custom domain"
-3. Enter `elisezamskyphd.com`
-4. Netlify will give you DNS records to add
-
-At your domain registrar, update DNS:
-- Add an A record pointing to Netlify's load balancer IP
-- Or change nameservers to Netlify's (simplest option)
-
-Netlify provides free SSL - your site will automatically be served over HTTPS.
+### Contact Form: Netlify Forms
+- Form submissions appear in Netlify dashboard under **Forms**
+- Email notifications configured in Netlify
 
 ---
 
-## Alternative: GitHub Pages (Also Free)
+## How to Make Updates
 
-If you prefer GitHub Pages:
-
-1. Push to GitHub as described above
-2. Go to repo Settings > Pages
-3. Select "main" branch, root folder
-4. Your site will be at `username.github.io/elise-zamsky-website`
-5. Add custom domain in the same settings area
-
----
-
-## Future Updates
-
-To update the site:
-
-1. Edit the files locally
-2. Test by opening in browser
-3. Commit and push to GitHub:
+1. Edit files locally
+2. Test by opening `index.html` in browser
+3. Push to GitHub:
    ```bash
+   cd /Users/max.gerlach/projects/elise-zamsky-website
    git add .
-   git commit -m "Update content"
+   git commit -m "Description of changes"
    git push
    ```
-4. Netlify automatically deploys changes (usually within 1-2 minutes)
+4. Netlify auto-deploys within 1-2 minutes
 
 ---
 
@@ -141,16 +53,69 @@ elise-zamsky-website/
 ├── css/
 │   └── style.css       # All styles
 ├── images/
-│   └── headshot.jpg    # Main photo (replace this)
+│   └── headshot.jpg    # Professional photo
+├── netlify.toml        # Netlify config (redirects)
 └── README.md           # This file
 ```
 
 ---
 
-## Need Help?
+## Setup Reference (How This Was Built)
 
-Common issues:
+### 1. GitHub Repository
+```bash
+git init
+git add .
+git commit -m "Initial website"
+gh repo create elise-zamsky-website --public --source=. --push
+```
 
-- **Form not working**: Make sure you replaced `YOUR_FORM_ID` with your actual Formspree form ID
-- **Image not showing**: Check that `images/headshot.jpg` exists and the path is correct
-- **Styling broken**: Make sure `css/style.css` exists and the link in HTML is correct
+Repository: https://github.com/maxgerlach1/elise-zamsky-website
+
+### 2. Netlify Deployment
+1. Go to [app.netlify.com](https://app.netlify.com)
+2. "Add new site" → "Import an existing project"
+3. Connect GitHub → select `elise-zamsky-website`
+4. Deploy (no build command needed for static HTML)
+
+### 3. Domain Setup (Namecheap)
+Purchased both domains at [namecheap.com](https://namecheap.com)
+
+For each domain:
+1. In Netlify: Domain settings → Add custom domain
+2. Click "Set up Netlify DNS" → get 4 nameservers
+3. In Namecheap: Domain List → Manage → Nameservers → Custom DNS
+4. Paste the 4 Netlify nameservers:
+   ```
+   dns1.p05.nsone.net
+   dns2.p05.nsone.net
+   dns3.p05.nsone.net
+   dns4.p05.nsone.net
+   ```
+5. Save and wait for DNS propagation (5-30 min)
+
+### 4. Contact Form (Netlify Forms)
+- Form uses `data-netlify="true"` attribute
+- Submissions go to Netlify dashboard → Forms
+- Email notifications: Forms → contact → Settings → Add notification
+
+---
+
+## Troubleshooting
+
+**Site not updating after push:**
+- Check Netlify dashboard → Deploys for errors
+- Make sure GitHub repo is connected
+
+**Form not working:**
+- Ensure `data-netlify="true"` is on the form tag
+- Submit a test to activate the form in Netlify
+
+**SSL certificate error:**
+- Go to Netlify → Domain settings → HTTPS → Renew certificate
+- Wait a few minutes for provisioning
+
+**DNS not resolving:**
+- Verify nameservers are set correctly in Namecheap
+- DNS can take up to 48 hours (usually 5-30 min)
+- Flush local DNS: `sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder`
